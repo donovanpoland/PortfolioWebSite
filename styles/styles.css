@@ -5,7 +5,14 @@
     
 }
 
-.socials-container
+body {
+    padding-top: 5em;
+}
+
+h1{
+    text-align: center;
+    font-size: 4em;
+}
 
 header{
     display: flex;
@@ -13,14 +20,22 @@ header{
     border: black;
 }
 
+nav.scrolled {
+    background: #333; /* Solid background when scrolling */
+}
+
 .navbar{
     background-color: red;
     opacity: 1;
     padding: 2em;
     width: 100%;
+    height: 1em;
     position: fixed;
     top: 0;
     left: 0;
+    background: rgba(0, 0, 0, 0.7); /* Transparent background */
+    transition: background 0.3s ease-in-out;
+    z-index: 1000;
 }
 
 .navbar ul {
@@ -28,6 +43,7 @@ header{
     display: flex;
     justify-content: center;
     gap: 1em;
+    flex-wrap: wrap;
 }
 
 nav a {
@@ -53,7 +69,14 @@ footer{
     background-color: red;
     padding: 2em;
     width: 100%;
+    height: .5em;
     gap: 1em;
+}
+
+.socials-container{
+    display: flex;
+    gap: .5em;
+    justify-content: right;
 }
 
 footer ul{
