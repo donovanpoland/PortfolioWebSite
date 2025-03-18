@@ -2,40 +2,29 @@
 *{
     padding: 0;
     margin: 0;
-    
+
 }
 
-body {
-    padding-top: 5em;
+.fa-brands{
+    font-size: 1.5em;
 }
 
-h1{
-    text-align: center;
-    font-size: 4em;
+html, body {
+    height: 100%; /* Make sure the body takes up the full viewport */
+    display: flex;
+    flex-direction: column;
 }
 
 header{
     display: flex;
-    /* place-items: center; */
-    border: black;
-}
-
-nav.scrolled {
-    background: #333; /* Solid background when scrolling */
+    border: black solid 2px;
 }
 
 .navbar{
     background-color: red;
-    opacity: 1;
     padding: 2em;
     width: 100%;
-    height: 1em;
-    position: fixed;
-    top: 0;
-    left: 0;
-    background: rgba(0, 0, 0, 0.7); /* Transparent background */
-    transition: background 0.3s ease-in-out;
-    z-index: 1000;
+    height: auto;
 }
 
 .navbar ul {
@@ -61,16 +50,75 @@ nav a:hover {
     border: black solid 2px;
 }
 
+/*Main*/
+main{
+    flex: 1; 
+}
+
+h1{
+    text-align: center;
+    font-size: 4em;
+}
+
+h2{
+    text-align: center;
+    font-size: 2em;
+}
+
+.fake-button{
+    border: black solid;
+    padding: 2px;
+    border-radius: .5em;
+    text-decoration: none;
+    background-color: black;
+}
+
+.fake-button{
+    color: red;
+}
+.fake-button a:hover{
+    background-color: red;
+    color: black;
+    transition-duration: 0.15s;
+    border: black solid 2px;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(1050, 1fr));
+    max-width: 1100px;
+    gap: 1em;
+    padding: 1em;
+    margin: 0 auto;
+}
+
+.item {
+    border: black solid;
+    border-radius: 10px;
+}
+
+.item1{
+    grid-column: 1/3;
+    font-size: 2em;
+}
+
+.item1 img{
+    float: left;
+    width: 250px;
+    height: auto;
+}
+
+
+
 footer{
-    position: fixed;
-    left: 0;
-    bottom: 0;
     display: flex;
     background-color: red;
     padding: 2em;
     width: 100%;
-    height: .5em;
+    height: auto;
     gap: 1em;
+    flex-wrap: wrap;
+    border: black solid 2px;
 }
 
 .socials-container{
@@ -81,7 +129,6 @@ footer{
 
 footer ul{
     list-style: none;
-    text-align: right;
 }
 
 footer a {
