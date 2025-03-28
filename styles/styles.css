@@ -11,6 +11,7 @@
 
 .fa-brands{
     font-size: 1.5em;
+    color: black;
 }
 
 html, body {
@@ -28,58 +29,12 @@ header{
     border: black solid 2px;
 }
 
-
-.navbar{
-    /* background-color: red; */
-    padding: 2em;
-    width: 100%;
-    height: auto;
+.home{
+    height: 1000px;
+    transform: perspective(1000px) translateZ(-200px) rotateX(20deg);
+    transform-style: preserve-3d;
 }
 
-.navbar ul{
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    gap: 1em;
-    flex-wrap: wrap;
-}
-
-nav a{
-    color: red;
-    background-color: black;
-    padding: .5em;
-    border-radius: 1em;
-}
-
-
-nav a:hover{
-    background-color: red;
-    color: black;
-    transition-duration: 0.15s;
-    border: black solid 2px;
-}
-
-.fake-button {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    color: red;
-    background-color: black;
-    border: black solid 2px;
-    border-radius: .5em;
-}
-
-.fake-button:hover{
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    background-color: red;
-    color: black;
-    transition-duration: 0.15s;
-    border: black solid 2px;
-    border-radius: .5em;
-}
 
 .scroll-container {
     width: 100%;
@@ -112,6 +67,11 @@ nav a:hover{
 /*Main*/
 main{
     flex: 1;
+    height: auto;
+}
+
+.center{
+    text-align: center;
 }
 
 h1{
@@ -127,7 +87,7 @@ h2{
 /*outer grid containers CSS start*/
 .outer-grid{
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(1050, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(1050, 100px));
     max-width: 1100px; /*350px*3+50px*/
     gap: 1em;
     padding: 1em;
@@ -192,6 +152,8 @@ h2{
     height: 100%;
 }
 
+
+
 /*inner grid containers CSS end*/
 
 
@@ -209,11 +171,17 @@ footer{
 .socials-container{
     display: flex;
     gap: .5em;
-    justify-content: right;
+    list-style: none; 
+    justify-content: center;
 }
 
 footer ul{
     list-style: none;
+}
+
+footer ul li a:hover i.fa-brands{
+    transform: scale(9em);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
 }
 
 footer a {
