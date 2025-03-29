@@ -13,15 +13,19 @@
     flex-wrap: wrap;
 }
 
-nav a{
+.navbar a{
+    
     color: red;
     background-color: black;
     padding: .5em;
     border-radius: 1em;
+    white-space: nowrap;
+    display: inline-block;
+    width: 80px;
+    text-align: center;
 }
 
-
-nav a:hover{
+.navbar a:hover{
     background-color: red;
     color: black;
     transition-duration: 0.15s;
@@ -48,4 +52,5 @@ nav a:hover{
     transition-duration: 0.15s;
     border: black solid 2px;
     border-radius: .5em;
+    word-wrap: normal;
 }

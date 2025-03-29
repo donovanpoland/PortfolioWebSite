@@ -29,40 +29,6 @@ header{
     border: black solid 2px;
 }
 
-.home{
-    height: 1000px;
-    transform: perspective(1000px) translateZ(-200px) rotateX(20deg);
-    transform-style: preserve-3d;
-}
-
-
-.scroll-container {
-    width: 100%;
-    overflow: hidden;
-    position: relative;
-    white-space: nowrap;
-    display: flex;
-}
-
-.scroll-inner {
-    display: flex;
-    gap: 20px;
-    width: max-content; /* Makes sure icons don't wrap */
-    animation: bounce 3s ease-in-out infinite alternate;
-}
-
-.scroll-inner i {
-    font-size: 2em;
-}
-
-@keyframes bounce {
-    0% {
-        transform: translateX(0);
-    }
-    100% {
-        transform: translateX(calc(100% - var(--grid-width, 100%)));
-    }
-}
 
 /*Main*/
 main{
@@ -75,13 +41,22 @@ main{
 }
 
 h1{
-    text-align: center;
     font-size: 4em;
 }
 
 h2{
-    text-align: center;
     font-size: 2em;
+}
+
+h3{
+    font-size: 1.5em;
+}
+
+.socials-container{
+    display: flex;
+    gap: .5em;
+    list-style: none; 
+    justify-content: center;
 }
 
 /*outer grid containers CSS start*/
@@ -99,91 +74,3 @@ h2{
     border-radius: 10px;
 }
 /*outer grid containers CSS end*/
-
-
-/*inner grid containers CSS start*/
-.inner-grid-sum{
-    font-size: 2em;
-    /*define outer grid*/
-    grid-column: 1/3;
-    /*create inner grid*/
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-}
-
-.inner-grid-exp{
-    display: grid;
-    grid-template-columns: 1fr;
-}
-
-.inner-grid-icons {
-    grid-column: 1/2;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-    width: 100%;
-    height: 100px;
-    position: relative;
-}
-
-.sum1{
-    /*inner grid*/
-    grid-row: 1/5;
-    border: black dotted; /*temp*/
-}
-
-.sum2{
-    /*inner grid*/
-    grid-column: 2/4;
-}
-
-.sum3, .sum4{
-    grid-row: 3/4;
-}
-
-.sum5{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    grid-column: 2/4;
-    grid-row: 4/5;
-    width: 100%;
-    height: 100%;
-}
-
-
-
-/*inner grid containers CSS end*/
-
-
-footer{
-    display: flex;
-    /* background-color: red; */
-    padding: 2em;
-    width: 100%;
-    height: auto;
-    gap: 1em;
-    flex-wrap: wrap;
-    border: black solid 2px;
-}
-
-.socials-container{
-    display: flex;
-    gap: .5em;
-    list-style: none; 
-    justify-content: center;
-}
-
-footer ul{
-    list-style: none;
-}
-
-footer ul li a:hover i.fa-brands{
-    transform: scale(9em);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
-}
-
-footer a {
-    color: black;
-}

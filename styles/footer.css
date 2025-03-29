@@ -1,0 +1,23 @@
+footer{
+    display: flex;
+    /* background-color: red; */
+    padding: 2em;
+    width: 100%;
+    height: auto;
+    gap: 1em;
+    flex-wrap: wrap;
+    border: black solid 2px;
+}
+
+footer ul{
+    list-style: none;
+}
+
+footer ul li a:hover i.fa-brands{
+    transform: scale(9em);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+footer a {
+    color: black;
+}

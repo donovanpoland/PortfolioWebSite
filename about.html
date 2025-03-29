@@ -6,12 +6,13 @@
     <title>About Me</title>
     <meta name="description" content="Learn more about Donovan Poland here.">
     <meta name="author" content="Donovan Poland">
+    <!--Start CSS style sheets-->
     <link rel="stylesheet" href="styles/navigation.css">
     <link rel="stylesheet" href="styles/styles.css">
-    <script src="script.js"></script>
+    <link rel="stylesheet" href="styles/footer.css" loading="lazy">
+    <!--End CSS style sheets-->
     <!--start Font awesome for logos-->
-    <link rel="stylesheet" href="assests/css/fontawesome.css">
-    <link rel="stylesheet" href="assests/css/brands.css">
+    <link rel="stylesheet" href="assests/css/all.css">
     <!--End link from Font Awesome for logos-->
 </head>
 <body>
@@ -28,17 +29,17 @@
         </nav>
     </header>
     <main>
-        <h1>About Me</h1>
+        <h1 class="center">About Me</h1>
         <div class="outer-grid">
-            <section class="outer-grid-item inner-grid-sum">
-                <img src="images/" alt="Image of me"loading="lazy" class="sum1">
-                <p class="sum2">This is a summary about me and some length of text will go here and take lots of space, i'm testing the length with this sentence. Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit hic molestiae quisquam dolorem distinctio modi voluptate facilis corrupti magni ullam.</p>
-                <p class="sum3"><b>Phone:</b> 801-***-****</p>
-                <p class="sum4"><b>Email:</b> email@email.com</p>
-                <a href="contact.html" class="sum5 fake-button">Contact Me!</a>
+            <section class="outer-grid-item">
+                <img src="images/" alt="Image of me" loading="lazy">
+                <p>This is a summary about me and some length of text will go here and take lots of space, i'm testing the length with this sentence. Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit hic molestiae quisquam dolorem distinctio modi voluptate facilis corrupti magni ullam.</p>
+                <p><b>Phone:</b> 801-***-****</p>
+                <p><b>Email:</b> email@email.com</p>
+                <a href="contact.html" class="fake-button">Contact Me!</a>
             </section>
-            <section class="outer-grid-item inner-grid-exp">
-                <h2>Tech Experience</h2>
+            <section class="outer-grid-item">
+                <h2 class="center">Tech Experience</h2>
                 <h3>Languages</h3>
                 <span>
                     <i class="fa-brands fa-html5"></i>
@@ -53,21 +54,21 @@
                     <i class="fa-brands fa-android"></i>
                 </span>
                 <h3>Job history</h3>
+                <p>Unofficial tech guy at WPL</p>
                 <p>Job history....</p>
-                <p>Job history....</p>
-                <p>For a deeper dive into my work history check me out in linkedIn. 
+                <p>For a deeper dive into my work history check me out on linkedIn. 
                     <a href="https://www.linkedin.com/in/donovanpoland" target="_blank">
                         <i class="fa-brands fa-linkedin"></i>
                 </p>
                 <a href="contact.html" class="fake-button">Hire Me!</a>
             </section>
-            <section class="outer-grid-item inner-grid-ed">
-                <h2><i class="fa-solid fa-user-graduate"></i>Education</h2>
+            <section class="outer-grid-item">
+                <h class="center"><i class="fa-solid fa-user-graduate"></i>Education</h2>
                 <h3>Certificates</h3>
                 <p>Lorem ipsum dolor sit amet.</p>
             </section>
             <section class="outer-grid-item inner-grid-soc">
-                <h2>Socials</h2>
+                <h2 class="center">Socials</h2>
                 <p>Lorem ipsum dolor sit amet.</p>
                 <ul class="socials-container">
                     <li><a href="https://www.linkedin.com/in/donovanpoland" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
@@ -77,16 +78,16 @@
                 </ul>
                 <button>Contanct me button goes here</button>
             </section>
-            <section class="outer-grid-item inner-grid-hob">
-                <h2>My Hobbies</h2>
+            <section class="outer-grid-item">
+                <h2 class="center">My Hobbies</h2>
                 <p>Summary of what I like to do</p>
                 <h3>games</h3>
                 <h3>books</h3>
                 <h3>movies</h3>
                 <h3>tech experiments</h3>
             </section>
-            <section class="outer-grid-item inner-grid-6">
-                <h2>Family</h2>
+            <section class="outer-grid-item">
+                <h2 class="center">Family</h2>
                 <p>Lorem ipsum dolor sit amet.</p>
                 <img src="" alt="img1">
                 <img src="" alt="img2">
@@ -96,7 +97,6 @@
     </main>
     <footer>
         <p>&copy;Copy Right 2025. All Rights Reserved.</p>
-        
         <ul class="socials-container">
             <li><a href="https://www.linkedin.com/in/donovanpoland" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
             <li><a href="https://www.github.com/donovanpoland" target="_blank"><i class="fa-brands fa-github"></i></a></li>
