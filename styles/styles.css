@@ -10,9 +10,12 @@
     box-sizing: border-box;
 }
 
-.fa-brands{
+i{
     font-size: 1.5em;
     color: black;
+    border: black solid 2px;
+    padding: .2em;
+    border-radius: .5em;
 }
 
 html, body {
@@ -22,7 +25,8 @@ html, body {
     background-color: red; /* For browsers that do not support gradients */
     overflow-x: hidden;
     overflow-y: auto;
-    background-image: linear-gradient(red, orange);
+    background-image: 
+        linear-gradient(red, orange);
 }
 
 header{
@@ -71,5 +75,37 @@ h3{
 .outer-grid-item {
     border: black solid;
     border-radius: 10px;
+    padding: 1em;
 }
+
+.summary{
+    
+}
+
+.summary img{
+ top: 0;
+ left: 0;
+ width: 200px;
+ height: 200px;
+ object-fit: cover;
+ border: 1px black solid;
+ border-radius: 1em;
+ overflow: hidden;
+}
+
+.education i{
+    font-size: 1.5rem;
+}
+
 /*outer grid containers CSS end*/
+
+
+.hide-border i{
+    height: auto;
+    border: none;
+}
+
+.hide-border i:hover{
+    color: white;
+}
+
