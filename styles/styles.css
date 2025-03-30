@@ -35,6 +35,8 @@ header{
 main{
     flex: 1;
     height: auto;
+    border-right: black solid 2px;
+    border-left: black solid 2px;
 }
 
 .center{
