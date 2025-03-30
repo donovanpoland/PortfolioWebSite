@@ -7,15 +7,13 @@ footer{
     gap: 1em;
     flex-wrap: wrap;
     border: black solid 2px;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 
 footer ul{
     list-style: none;
-}
-
-footer ul li a:hover i.fa-brands{
-    transform: scale(9em);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
 }
 
 footer a {

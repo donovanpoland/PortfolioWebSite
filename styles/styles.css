@@ -7,6 +7,7 @@
     padding: 0;
     margin: 0;
     text-decoration: none;
+    box-sizing: border-box;
 }
 
 .fa-brands{
@@ -15,7 +16,7 @@
 }
 
 html, body {
-    height: auto; /* Make sure the body takes up the full viewport */
+    height: auto;
     display: flex;
     flex-direction: column;
     background-color: red; /* For browsers that do not support gradients */
@@ -52,12 +53,8 @@ h3{
     font-size: 1.5em;
 }
 
-.socials-container{
-    display: flex;
-    gap: .5em;
-    list-style: none; 
-    justify-content: center;
-}
+
+
 
 /*outer grid containers CSS start*/
 .outer-grid{
