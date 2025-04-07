@@ -1,3 +1,10 @@
+/* header and footer CSS file*/
+
+header{
+    display: flex;
+    border: black solid 2px;
+}
+
 footer{
     display: flex;
     /* background-color: red; */

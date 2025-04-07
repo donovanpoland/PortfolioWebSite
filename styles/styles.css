@@ -30,14 +30,11 @@ html, body {
         linear-gradient(red, orange);
 }
 
-header{
-    display: flex;
-    border: black solid 2px;
-}
-
 
 /*Main*/
 main{
+    padding-top: 1em;
+    padding-bottom: 1em;
     flex: 1;
     height: auto;
     border-right: black solid 2px;
