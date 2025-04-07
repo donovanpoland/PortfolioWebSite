@@ -60,6 +60,7 @@
     gap: .5em;
     list-style: none; 
     justify-content: center;
+    height: 5em;
 }
 
 .socials-container a{
@@ -72,6 +73,7 @@
     padding: .5em;
     border: black 2px solid;
     border-radius: 1em;
+
 }
 
 .socials-container span {
