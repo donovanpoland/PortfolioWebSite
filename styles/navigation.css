@@ -37,6 +37,7 @@
     align-items: center;
     justify-content: center;
     text-align: center;
+    font-size: 1.5rem;
     color: red;
     background-color: black;
     border: black solid 2px;
@@ -54,6 +55,8 @@
     border-radius: .5em;
     word-wrap: normal;
 }
+
+
 
 .socials-container{
     display: flex;

@@ -1,0 +1,74 @@
+.profile-grid {
+    display: grid;
+    /* Two columns: left (for the photo) and right (for text) */
+    grid-template-columns: 1fr 2fr;
+    /* Four rows to separate summary, contact info, and button */
+    grid-template-rows: auto auto auto auto;
+    gap: 1em;
+    /* Define named grid areas */
+    grid-template-areas:
+      "photo summary"
+      "photo summary"
+      "photo contact"
+      "button button";
+  }
+
+  /* Image fills the left column entirely */
+  .profile-photo {
+    grid-area: photo;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    overflow: hidden;
+  }
+
+  /* Summary occupies the top two rows of the right column */
+  .profile-summary {
+    grid-area: summary;
+    /* Optionally add some padding or font adjustments */
+  }
+
+  /* Contact information (phone and email) side by side */
+  .contact-info {
+    grid-area: contact;
+    display: flex;
+    gap: 1em;
+    justify-content: center;
+    font-size: 1.5rem;
+    /* You can also use justify-content or flex properties for specific alignment */
+  }
+
+.grid-button {
+    grid-area: button;
+    font-size: 1.5rem;
+    display: block;
+    text-align: center;
+    padding: 0;
+    background-color: black;
+    color: red;
+    text-decoration: none;
+}
+
+.grid-button:hover{
+    background-color: transparent;
+    transition-duration: 0.15s;
+    word-wrap: normal;
+    color: black;
+}
+
+@media (max-width: 800px) {
+    .profile-grid {
+      grid-template-columns: 1fr; /* Single column */
+      grid-template-rows: auto auto auto auto; /* One row per element */
+      grid-template-areas:
+        "photo"
+        "summary"
+        "contact"
+        "button";
+    }
+    
+    .contact-info {
+      flex-direction: column; /* Stack phone and email vertically */
+      align-items: center;
+    }
+  }

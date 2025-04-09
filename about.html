@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="styles/header-footer.css">
     <link rel="stylesheet" href="styles/navigation.css">
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/profile-grid.css">
     <link rel="stylesheet" href="styles/scroll-animation.css">
     <!--End CSS style sheets-->
     <!--start Font awesome for logos-->
@@ -21,172 +22,202 @@
     <!--Insert header from header.html-->
     <div id="header-include"></div>
     <main>
-        <h1 class="center underline hide-border"><i class="fa-solid fa-book-open"></i>About Me</h1>
+        <h1 class="center underline"><i class="fa-solid fa-book-open"></i>About Me</h1>
         <!--Outer Grid start-->
-        <div class="outer-grid">
+        <div class="grid grid-full border-radius">
             <!--About-->
-            <section class="outer-grid-item summary">
-                <img src="images/" alt="Image of me">
-                <div class="grid">
-                    <p>This is a summary about me and some length of text will go here and take lots of space, i'm testing the length
-                        with this sentence. Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit hic molestiae quisquam
-                        dolorem distinctio modi voluptate facilis corrupti magni ullam.</p><br>
-                    <p><b>Phone:</b> 801-***-****</p>
-                    <p><b>Email:</b> email@email.com</p>
-                    <a href="contact.html" class="fake-button">Contact Me!</a>
+            <section class="grid-item border-radius">
+                <div class="profile-grid grid">
+                    <img src="images/" alt="Image of me" class="profile-photo border-radius">
+                    <p class="profile-summary">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores explicabo esse consequuntur, quia ut blanditiis vel libero deserunt nemo repudiandae, nisi nesciunt amet quisquam assumenda sed ea iusto modi tenetur cum debitis! Officiis eveniet maiores dolor est perspiciatis itaque porro, laboriosam deleniti illum dignissimos, explicabo harum officia nam beatae quasi quia neque architecto libero ratione inventore. Molestias incidunt maiores voluptates harum eos iure, similique totam voluptate dolorum adipisci quas optio, doloribus tempore dolorem illum omnis sunt explicabo accusamus dolores placeat deserunt soluta possimus. Esse deserunt at a, obcaecati nemo debitis sapiente ducimus alias error. Dignissimos ex minima ipsum aliquid maiores quidem excepturi debitis. Excepturi eligendi, asperiores perferendis quo magni facilis. Alias esse doloribus magnam ullam enim reiciendis possimus reprehenderit harum. Doloremque earum officia omnis, dolores magnam rem perspiciatis ipsum sunt consequuntur, et ullam eaque dicta molestias blanditiis suscipit mollitia, aperiam nobis aut expedita? Quaerat magni nulla vero! Error excepturi dolores sit illo incidunt rerum molestiae, odio modi repudiandae illum iure nobis quos rem quasi accusamus molestias exercitationem praesentium maxime. Libero quae neque reiciendis magnam maiores beatae nihil quibusdam corrupti temporibus! Fuga doloremque dicta ipsa quaerat nihil earum quasi, voluptates ex voluptas porro nesciunt quo, commodi quas laborum impedit, deleniti consequatur.
+                    </p>
+                    <div class="contact-info">
+                        <p><b>Phone:</b> 801-***-****</p>
+                        <p><b>Email:</b> email@email.com</p>
+                    </div>
+                    <a href="contact.html" class="grid-button grid-item border-radius">Contact Me!</a>
                 </div>
             </section>
             <!--Experience-->
-            <h2 class="center underline hide-border"><i class="fa-solid fa-code"></i>Tech Experience</h2>
-            <section class="outer-grid-item tech">
-                <h3 class="center">Languages</h3>
-                <div class="scroll">
-                    <div class="scroll-left left1">
-                        <i class="fa-brands fa-html5"></i>
-                        <span class="label">HTML5</span>
+            <h2 class="center underline"><i class="fa-solid fa-code"></i>Tech Experience</h2>
+            <section class="grid-item border-radius center">
+                <div class="grid">
+                    <h3 class="grid-item">Languages</h3>
+                    <div class="scroll">
+                        <div class="scroll-left left1">
+                            <i class="fa-brands fa-html5 border-radius"></i>
+                            <span class="label">HTML5</span>
+                        </div>
+                        <div class="scroll-left left2">
+                            <i class="fa-brands fa-css border-radius"></i>
+                            <span class="label">CSS</span>
+                        </div>
+                        <div class="scroll-left left3">
+                            <i class="fa-brands fa-java border-radius"></i>
+                            <span class="label">Java</span>
+                        </div>
+                        <div class="scroll-left left4">
+                            <i class="fa-brands fa-python border-radius"></i>
+                            <span class="label">Python</span>
+                        </div>
+                        <div class="scroll-left left5">
+                            <img src="images/sql-file-format-symbol.png" alt="" class="border-radius">
+                            <span class="label">SQL</span>
+                        </div>
+                        <div class="scroll-left left6">
+                            <i class="fa-brands fa-css border-radius"></i>
+                            <span class="label">CSS</span>
+                        </div>
+                        <div class="scroll-left left7">
+                            <i class="fa-brands fa-java border-radius"></i>
+                            <span class="label">Java</span>
+                        </div>
+                        <div class="scroll-left left8">
+                            <i class="fa-brands fa-python border-radius"></i>
+                            <span class="label">Python</span>
+                        </div>
                     </div>
-                    <div class="scroll-left left2">
-                        <i class="fa-brands fa-css"></i>
-                        <span class="label">CSS</span>
-                    </div>
-                    <div class="scroll-left left3">
-                        <i class="fa-brands fa-java"></i>
-                        <span class="label">Java</span>
-                    </div>
-                    <div class="scroll-left left4">
-                        <i class="fa-brands fa-python"></i>
-                        <span class="label">Python</span>
-                    </div>
-                    <div class="scroll-left left5">
-                        <img src="images/sql-file-format-symbol.png" alt="">
-                        <span class="label">SQL</span>
-                    </div>
-                    <div class="scroll-left left6">
-                        <i class="fa-brands fa-css"></i>
-                        <span class="label">CSS</span>
-                    </div>
-                    <div class="scroll-left left7">
-                        <i class="fa-brands fa-java"></i>
-                        <span class="label">Java</span>
-                    </div>
-                    <div class="scroll-left left8">
-                        <i class="fa-brands fa-python"></i>
-                        <span class="label">Python</span>
+                    <h3 class=" grid-item">Operating systems</h3>
+                    <div class="scroll">
+                        <div class="scroll-right right1">
+                            <i class="fa-brands fa-windows border-radius"></i>
+                            <span class="label">Windows</span>
+                        </div>
+                        <div class="scroll-right right2">
+                            <i class="fa-brands fa-apple border-radius"></i>
+                            <span class="label">Apple</span>
+                        </div>
+                        <div class="scroll-right right3">
+                            <i class="fa-brands fa-android border-radius"></i>
+                            <span class="label">Android</span>
+                        </div>
+                        <div class="scroll-right right4">
+                            <i class="fa-brands fa-debian border-radius"></i>
+                            <span class="label">Debian</span>
+                        </div>
+                        <div class="scroll-right right5">
+                            <i class="fa-brands fa-raspberry-pi border-radius"></i>
+                            <span class="label">PI OS</span>
+                        </div>
+                        <div class="scroll-right right6">
+                            <i class="fa-brands fa-windows border-radius"></i>
+                            <span class="label">Windows</span>
+                        </div>
+                        <div class="scroll-right right7">
+                            <i class="fa-brands fa-apple border-radius"></i>
+                            <span class="label">Apple</span>
+                        </div>
+                        <div class="scroll-right right8">
+                            <i class="fa-brands fa-android border-radius"></i>
+                            <span class="label">Android</span>
+                        </div>
+                        <div class="scroll-right right9">
+                            <i class="fa-brands fa-debian border-radius"></i>
+                            <span class="label">Debian</span>
+                        </div>
+                        <div class="scroll-right right10">
+                            <i class="fa-brands fa-raspberry-pi border-radius"></i>
+                            <span class="label">PI OS</span>
+                        </div>
                     </div>
                 </div>
-                <h3 class="center">Operating systems</h3>
-                <div class="scroll">
-                    <div class="scroll-right right1">
-                        <i class="fa-brands fa-windows"></i>
-                        <span class="label">Windows</span>
+                <div class="grid grid-responsive">
+                    <div class="grid-item">
+                    <h3>Job history</h3>
+                        <p>Looking for work in the tech industry</p>
+                        <p>Unofficial tech guy at WPL</p>
                     </div>
-                    <div class="scroll-right right2">
-                        <i class="fa-brands fa-apple"></i>
-                        <span class="label">Apple</span>
-                    </div>
-                    <div class="scroll-right right3">
-                        <i class="fa-brands fa-android"></i>
-                        <span class="label">Android</span>
-                    </div>
-                    <div class="scroll-right right4">
-                        <i class="fa-brands fa-debian"></i>
-                        <span class="label">Debian</span>
-                    </div>
-                    <div class="scroll-right right5">
-                        <i class="fa-brands fa-raspberry-pi"></i>
-                        <span class="label">PI OS</span>
-                    </div>
-                    <div class="scroll-right right6">
-                        <i class="fa-brands fa-windows"></i>
-                        <span class="label">Windows</span>
-                    </div>
-                    <div class="scroll-right right7">
-                        <i class="fa-brands fa-apple"></i>
-                        <span class="label">Apple</span>
-                    </div>
-                    <div class="scroll-right right8">
-                        <i class="fa-brands fa-android"></i>
-                        <span class="label">Android</span>
-                    </div>
-                    <div class="scroll-right right9">
-                        <i class="fa-brands fa-debian"></i>
-                        <span class="label">Debian</span>
-                    </div>
-                    <div class="scroll-right right10">
-                        <i class="fa-brands fa-raspberry-pi"></i>
-                        <span class="label">PI OS</span>
+                    <div class="grid-item">
+                        <h3>Resumé
+                            <a href="/images/resume.jpeg" download target="_blank">
+                                <i class="fa-solid fa-file icon-color"></i>
+                                <span>(Coming soon)</span>
+                            </a>
+                        </h3>
                     </div>
                 </div>
-                <h3>Job history</h3>
-                <h3 class="hide-border">Resume 
-                    <a href="/images/resume.jpeg" download target="_blank">
-                        <i class="fa-solid fa-file icon-color"></i>
-                    </a>
-                </h3>
-                <p>Looking for work in the tech industry</p>
-                <p>Unofficial tech guy at WPL</p>
-                <p class="hide-border center">For a deeper dive into my work history check me out on 
+                <p class="center">For a deeper dive into my work history check me out on
                     <a href="https://www.linkedin.com/in/donovanpoland" target="_blank">
                         <i class="fa-brands fa-linkedin icon-color"></i>
                 </p>
-                <a href="contact.html" class="fake-button">Hire Me!</a>
+                    <a href="contact.html" class="fake-button">Hire Me!</a>
             </section>
             <!--Education-->
-            <h2 class="center hide-border underline"><i class="fa-solid fa-user-graduate"></i>Education</h2>
-            <section class="outer-grid-item education">
-                <h3>Certificates</h3>
-                <p>Lorem ipsum dolor sit amet.</p>
-                <h3>Schools</h3>
-                <p>Lorem ipsum dolor sit amet.</p>
+            <h2 class="center underline"><i class="fa-solid fa-user-graduate"></i>Education</h2>
+            <section class="grid-item border-radius center">
+                <div class="grid grid-responsive">
+                    <div class="grid-item">
+                        <h3>Certificates</h3>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                    </div>
+                    <div class="grid-item">
+                        <h3>Schools</h3>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                    </div>
+                </div>
             </section>
             <!--Socials-->
-            <h2 class="center underline hide-border"><i class="fa-solid fa-hashtag"></i>Socials</h2>
-            <section class="outer-grid-item">
-                <p>Lorem ipsum dolor sit amet.</p>
-                <ul class="socials-container">
-                    <li>
-                        <a href="https://www.linkedin.com/in/donovanpoland" target="_blank">
-                            <i class="fa-brands fa-linkedin"></i>
-                            <span>LinkedIn</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.github.com/donovanpoland" target="_blank">
-                            <i class="fa-brands fa-github"></i>
-                            <span>GitHub</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://codepen.io/Donovan-Poland" target="_blank">
-                            <i class="fa-brands fa-codepen"></i>
-                            <span>CodePen</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" target="_blank">
-                            <i class="fa-brands fa-stack-overflow"></i>
-                            <span>Stack Overflow</span>
-                        </a>
-                    </li>
-                </ul>
-                <button>Contanct me button goes here</button>
+            <h2 class="center underline"><i class="fa-solid fa-hashtag"></i>Socials</h2>
+            <section class="grid-item border-radius">
+                <div class="grid center">
+                    <p class="grid-item grid-heading">Lorem ipsum dolor sit amet.</p>
+                    <div class="grid-item">
+                        <ul class="socials-container ">
+                            <li>
+                                <a href="https://www.linkedin.com/in/donovanpoland" target="_blank">
+                                    <i class="fa-brands fa-linkedin"></i>
+                                    <span>LinkedIn</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.github.com/donovanpoland" target="_blank">
+                                    <i class="fa-brands fa-github"></i>
+                                    <span>GitHub</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://codepen.io/Donovan-Poland" target="_blank">
+                                    <i class="fa-brands fa-codepen"></i>
+                                    <span>CodePen</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" target="_blank">
+                                    <i class="fa-brands fa-stack-overflow"></i>
+                                    <span>Stack Overflow</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="flex">
+                        <p><b>Phone:</b> 801-***-****</p>
+                        <p><b>Email:</b> email@email.com</p>
+                    </div>
+                    <button class="grid-item">Contanct me button goes here</button>
+                </div>
             </section>
             <!--Hobbies-->
             <h2 class="center underline">My Hobbies</h2>
-            <section class="outer-grid-item">
-                <p>Summary of what I like to do</p>
-                <h3>games</h3>
-                <h3>books</h3>
-                <h3>movies</h3>
-                <h3>tech experiments</h3>
+            <section class="grid-item border-radius">
+                <div class="grid grid-responsive center">
+                    <p class="grid-item grid-heading">Summary of what I like to do</p>
+                    <h3 class="grid-item">Games</h3>
+                    <h3 class="grid-item">Books</h3>
+                    <h3 class="grid-item">Movies</h3>
+                    <h3 class="grid-item">Art</h3>
+                    <h3 class="grid-item">Crypto</h3>
+                    <h3 class="grid-item">Tech experiments</h3>
+                </div>
             </section>
             <!--Family-->
-            <h2 class="center underline hide-border"><i class="fa-solid fa-people-roof"></i>Family</h2>
-            <section class="outer-grid-item">
-                <p>Lorem ipsum dolor sit amet.</p>
-                <img src="" alt="img1">
-                <img src="" alt="img2">
-                <img src="" alt="img3">
+            <h2 class="center underline"><i class="fa-solid fa-people-roof"></i>Family</h2>
+            <section class="grid-item border-radius">
+                <div class="grid grid-responsive">
+                    <p class="grid-item grid-heading">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem, natus neque! Dicta, id voluptas. Debitis natus consectetur aliquid nobis saepe.</p>
+                    <img src="" alt="img1" class="grid-item">
+                    <img src="" alt="img2" class="grid-item">
+                    <img src="" alt="img3" class="grid-item">
+                </div>
             </section>
         </div>
         <!--Outer Grid End-->
