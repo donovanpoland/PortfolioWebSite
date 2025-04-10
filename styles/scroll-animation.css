@@ -1,6 +1,8 @@
 :root{
     --right: 10;
     --left: 8;
+    --time-right: 30s;
+    --time-left: 30s;
 }
 
 .scroll {
@@ -9,6 +11,7 @@
     margin-inline: auto;
     position: relative;
     height: 4rem;
+    gap: 1.5rem;
     overflow: hidden;
     mask-image: linear-gradient(
       to right,
@@ -28,7 +31,7 @@
     height: 4rem;
     width: 4rem;
     animation-name: scrollLeft;
-    animation-duration: 30s;
+    animation-duration: var(--time-left);
     animation-timing-function: linear;
     animation-iteration-count: infinite;
 }
@@ -41,28 +44,34 @@
     height: 4rem;
     width: 4rem;
     animation-name: scrollRight;
-    animation-duration: 30s;
+    animation-duration: var(--time-right);
     animation-timing-function: linear;
     animation-iteration-count: infinite;
     justify-content: space-between;
    
 }
 
-.scroll-left i {
-    font-size: 2em;
+.scroll-left i, .scroll-right i {
+    font-size: 2rem;
 }
 
-.scroll-left .label {
+.scroll-left .label, .scroll-right .label {
     font-size: 0.8em;
     margin-top: 0.2em;
 }
+
+.scroll-left img{
+  height: 50px;
+  padding: .2em;
+}
+
 
 @keyframes scrollLeft {
     0% {
       left: 100%;
     }
     100% {
-      left: -150px;
+      left: -8rem;
     }
 }
 
@@ -71,86 +80,82 @@
       right: 100%;
     }
     100% {
-      right: -150px;
+      right: -15rem;
     }
 }
 /*Right animation*/
 .right1 {
-  animation-delay: calc(30s / var(--right) * (var(--right) - 1) * -1);
+  animation-delay: calc(var(--time-right) / var(--right) * (var(--right) - 1) * -1);
 }
 
 .right2 {
-  animation-delay: calc(30s / var(--right) * (var(--right) - 2) * -1);
+  animation-delay: calc(var(--time-right) / var(--right) * (var(--right) - 2) * -1);
 }
 
 .right3 {
-  animation-delay: calc(30s / var(--right) * (var(--right) - 3) * -1);
+  animation-delay: calc(var(--time-right) / var(--right) * (var(--right) - 3) * -1);
 }
 
 .right4 {
-  animation-delay: calc(30s / var(--right) * (var(--right) - 4) * -1);
+  animation-delay: calc(var(--time-right) / var(--right) * (var(--right) - 4) * -1);
 }
 
 .right5 {
-    animation-delay: calc(30s / var(--right) * (var(--right) - 5) * -1);
+  animation-delay: calc(var(--time-right) / var(--right) * (var(--right) - 5) * -1);
 }
 
 .right6 {
-    animation-delay: calc(30s / var(--right) * (var(--right) - 6) * -1);
+  animation-delay: calc(var(--time-right) / var(--right) * (var(--right) - 6) * -1);
 }
 
 .right7 {
-    animation-delay: calc(30s / var(--right) * (var(--right) - 7) * -1);
+  animation-delay: calc(var(--time-right) / var(--right) * (var(--right) - 7) * -1);
 }
 
 .right8 {
-    animation-delay: calc(30s / var(--right) * (var(--right) - 8) * -1);
+  animation-delay: calc(var(--time-right) / var(--right) * (var(--right) - 8) * -1);
 }
 
 .right9 {
-    animation-delay: calc(30s / var(--right) * (var(--right) - 9) * -1);
+  animation-delay: calc(var(--time-right) / var(--right) * (var(--right) - 9) * -1);
 }
 
 .right10 {
-    animation-delay: calc(30s / var(--right) * (var(--right) - 10) * -1);
+  animation-delay: calc(var(--time-right)s / var(--right) * (var(--right) - 10) * -1);
 }
 
 /*Left animation*/
 
 .left1 {
-  animation-delay: calc(30s / var(--left) * (var(--left) - 1) * -1);
+  animation-delay: calc(var(--time-left) / var(--left) * (var(--left) - 1) * -1);
 }
 
 .left2 {
-  animation-delay: calc(30s / var(--left) * (var(--left) - 2) * -1);
+  animation-delay: calc(var(--time-left) / var(--left) * (var(--left) - 2) * -1);
 }
 
 .left3 {
-  animation-delay: calc(30s / var(--left) * (var(--left) - 3) * -1);
+  animation-delay: calc(var(--time-left) / var(--left) * (var(--left) - 3) * -1);
 }
 
 .left4 {
-  animation-delay: calc(30s / var(--left) * (var(--left) - 4) * -1);
+  animation-delay: calc(var(--time-left) / var(--left) * (var(--left) - 4) * -1);
 }
 
 .left5 {
-    animation-delay: calc(30s / var(--left) * (var(--left) - 5) * -1);
+  animation-delay: calc(var(--time-left) / var(--left) * (var(--left) - 5) * -1);
 }
 
 .left6 {
-    animation-delay: calc(30s / var(--left) * (var(--left) - 6) * -1);
+  animation-delay: calc(var(--time-left) / var(--left) * (var(--left) - 6) * -1);
 }
 
 .left7 {
-    animation-delay: calc(30s / var(--left) * (var(--left) - 7) * -1);
+  animation-delay: calc(var(--time-left) / var(--left) * (var(--left) - 7) * -1);
 }
 
 .left8 {
-    animation-delay: calc(30s / var(--left) * (var(--left) - 8) * -1);
+  animation-delay: calc(var(--time-left) / var(--left) * (var(--left) - 8) * -1);
 }
 
-.scroll-left img{
-    height: 50px;
-    padding: .2em;
-}
 

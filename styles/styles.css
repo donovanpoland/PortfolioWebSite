@@ -29,7 +29,7 @@ i{
 
 .border-radius{
     border: black solid 2px;
-    border-radius: .5em;
+    border-radius: .5rem;
 }
 
 .hide-border{
@@ -71,12 +71,12 @@ main{
     display: grid;
     grid-template-columns: repeat(var(--grid-cols, 3), minmax(300px, 1fr));
     gap: var(--grid-gap);
-    padding: 1em;
+    padding: .5rem;
     height: auto;
 }
 
 .grid-item {
-    padding: .5em;
+    padding: .5rem;
 }
 
 .grid-full {
@@ -112,5 +112,5 @@ main{
 
 .flex{
     display: flex;
-    justify-content: center;
+    align-items: center;
 }
