@@ -66,6 +66,10 @@ main{
     text-align: center;
 }
 
+.remove-center{
+    text-align: none;
+}
+
 
 .grid {
     display: grid;
@@ -113,4 +117,8 @@ main{
 .flex{
     display: flex;
     align-items: center;
+}
+
+.indent{
+    text-indent: 2em;
 }
