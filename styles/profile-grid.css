@@ -27,7 +27,11 @@
     grid-area: summary;
     height: 15em;
     font-size: 1.5rem;
-    /* Optionally add some padding or font adjustments */
+  }
+  @media(max-width: 800px){
+    .profile-summary{
+      font-size: .75rem;
+    }
   }
 
   /* Contact information (phone and email) side by side */
