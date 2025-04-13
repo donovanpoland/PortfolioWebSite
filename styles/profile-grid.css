@@ -27,6 +27,7 @@
     grid-area: summary;
     height: 15em;
     font-size: 1.5rem;
+    height: auto;
   }
   @media(max-width: 800px){
     .profile-summary{
