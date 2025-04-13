@@ -25,6 +25,8 @@
   /* Summary occupies the top two rows of the right column */
   .profile-summary {
     grid-area: summary;
+    height: 15em;
+    font-size: 1.5rem;
     /* Optionally add some padding or font adjustments */
   }
 

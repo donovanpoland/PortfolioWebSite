@@ -14,12 +14,16 @@
 
 i{
     font-size: 1.4rem;
-    color: black;
     height: auto;
     padding: .2em;
+    color: black;
 }
 
-.icon-color:hover{
+.alink{
+    color: black;
+}
+
+.alink:hover{
     color: white;
 }
 
@@ -66,11 +70,6 @@ main{
     text-align: center;
 }
 
-.remove-center{
-    text-align: none;
-}
-
-
 .grid {
     display: grid;
     grid-template-columns: repeat(var(--grid-cols, 3), minmax(300px, 1fr));
@@ -84,7 +83,7 @@ main{
 }
 
 .grid-full {
-    max-width: 1100px;
+    max-width: 1400px;
     margin: 0 auto;
 }
 
@@ -101,24 +100,18 @@ main{
     grid-column: 1/-1;
 }
 
-.grid-left{
-    grid-row: 1 / -3;
-}
-
-.attribution a:hover{
-    color: white;
-}
-
 .attribution i{
     font-size: 1rem;
     border: transparent;
 }
 
-.flex{
-    display: flex;
-    align-items: center;
-}
-
 .indent{
     text-indent: 2em;
+}
+
+.fit{
+    display: block;
+    object-fit: cover;
+    width: 100%;
+    height: auto;
 }
