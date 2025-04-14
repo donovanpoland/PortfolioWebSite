@@ -7,14 +7,13 @@ header{
 
 footer{
     display: flex;
-    /* background-color: red; */
     padding: 2em;
     width: 100%;
     height: auto;
     gap: 1em;
     flex-wrap: wrap;
-    justify-content: center;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
 }
 
