@@ -115,3 +115,7 @@ main{
     width: 100%;
     height: auto;
 }
+
+.flex-font{
+    font-size: clamp(1rem, 3vw, 1.5rem);
+}
