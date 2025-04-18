@@ -21,10 +21,17 @@ i{
 
 .alink{
     color: black;
+    padding: .4em;
 }
 
 .alink:hover{
     color: white;
+    background-color: rgba(40, 40, 40, .3);
+    border-radius: .5em;
+}
+
+.alink i:hover{
+    background-color: transparent;
 }
 
 .border{
@@ -48,7 +55,7 @@ html, body {
     overflow-x: hidden;
     overflow-y: auto;
     background-image:
-        linear-gradient(red, white);
+        linear-gradient(white 5%, orange, red, orange, white 95%);
 }
 
 
@@ -72,7 +79,7 @@ main{
 
 .grid {
     display: grid;
-    grid-template-columns: repeat(var(--grid-cols, 3), minmax(300px, 1fr));
+    grid-template-columns: repeat(var(--grid-cols, 3), minmax(18.75rem, 1fr));
     gap: var(--grid-gap);
     padding: .5rem;
     height: auto;
@@ -83,13 +90,13 @@ main{
 }
 
 .grid-full {
-    max-width: 1400px;
+    max-width: 87.5rem;
     margin: 0 auto;
 }
 
 .grid-responsive {
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  }
+    grid-template-columns: repeat(auto-fit, minmax(15.625rem, 1fr));
+}
 
 /* override --grid-cols variable if needed*/
 .grid-cols-3 {
@@ -117,5 +124,5 @@ main{
 }
 
 .flex-font{
-    font-size: clamp(1.25rem, 3vw, 1.75rem);
+    font-size: clamp(1rem, 3vw, 1.75rem);
 }

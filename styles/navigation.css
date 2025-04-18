@@ -9,8 +9,8 @@
     list-style: none;
     display: flex;
     justify-content: center;
-    gap: 1em;
-    font-size: 1rem;
+    gap: .5em;
+    font-size: clamp(.9rem, 3vw, 1.2rem);
     flex-wrap: wrap;
 }
 
@@ -21,7 +21,6 @@
     border-radius: 1em;
     white-space: nowrap;
     display: inline-block;
-    
     width: 100px;
     text-align: center;
     border: black solid 2px;
