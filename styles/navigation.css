@@ -10,7 +10,7 @@
     display: flex;
     justify-content: center;
     gap: .5em;
-    font-size: clamp(.9rem, 3vw, 1.2rem);
+    font-size: clamp(.9rem, 3vw, 1.125rem);
     flex-wrap: wrap;
 }
 
@@ -21,7 +21,7 @@
     border-radius: 1em;
     white-space: nowrap;
     display: inline-block;
-    width: 100px;
+    width: 6.5rem;
     text-align: center;
     border: black solid 2px;
 }
