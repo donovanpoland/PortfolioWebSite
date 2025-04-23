@@ -1,9 +1,6 @@
 /* header and footer CSS file*/
 
-header{
-    display: flex;
-
-}
+/* aNo header specific CSS, all info handled through navigation.css */
 
 footer{
     display: flex;

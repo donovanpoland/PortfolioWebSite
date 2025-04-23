@@ -1,14 +1,19 @@
 // includes.js
 async function loadHTML(id, file) {
-    try {
-      const res = await fetch(file);
-      if (!res.ok) throw new Error(`Failed to fetch ${file}`);
-      const html = await res.text();
-      document.getElementById(id).innerHTML = html;
-    } catch (error) {
-      console.error(error);
+  try {
+    const res = await fetch(file);
+    if (!res.ok) throw new Error(`Failed to fetch ${file}`);
+    const html = await res.text();
+    document.getElementById(id).innerHTML = html;
+
+    // If we're loading the header, initialize the hamburger
+    if (id === "header-include") {
+      initHamburgerMenu();
     }
+  } catch (error) {
+    console.error(error);
   }
+}
   
   // Call includes on page load
   window.addEventListener("DOMContentLoaded", () => {
@@ -36,3 +41,17 @@ async function loadHTML(id, file) {
     loadHTML("about-me-include", "includes/about-me.html");
   }
   });
+
+  function initHamburgerMenu() {
+    const hamburger = document.getElementById("hamburger");
+    const navMenu = document.getElementById("nav-menu");
+  
+    if (!hamburger || !navMenu) {
+      console.error("Hamburger menu elements not found in header.");
+      return;
+    }
+  
+    hamburger.addEventListener("click", () => {
+      navMenu.classList.toggle("show");
+    });
+  }

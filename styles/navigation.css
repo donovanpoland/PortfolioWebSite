@@ -1,5 +1,4 @@
 .navbar{
-    /* background-color: red; */
     padding: 1em;
     width: 100%;
     height: auto;
@@ -32,6 +31,64 @@
     transition-duration: 0.15s;
     border: black solid 2px;
 }
+
+/* Hamburger button (initially hidden) */
+.hamburger {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+@media (max-width: 50rem) {
+    .navbar {
+      flex-direction: column;
+      align-items: flex-start;
+      position: relative;
+    }
+  
+    .hamburger {
+      display: block;
+      position: absolute;
+      top: 0;
+      right: 1em;
+      z-index: 2;
+ 
+    }
+  
+    .navbar ul {
+        margin-top: 1em;
+        display: none;
+        flex-direction: column;
+        background-color: black;
+        overflow: hidden;
+        padding: 1em;
+        gap: 0.5em;
+        max-height: 0;
+        transition: max-height 0.7s ease-in-out, opacity 0.3s ease;
+    }
+  
+    .navbar ul.show {
+      display: flex;
+      max-height: 31.25rem;
+      opacity: 1;
+    }
+  
+    .navbar a {
+      color: red;
+      border: none;
+      text-align: left;
+    }
+  
+    .navbar a:hover {
+      background-color: black;
+      color: red;
+      border: none;
+    }
+}
+
+
 
 .fake-button {
     display: flex;
