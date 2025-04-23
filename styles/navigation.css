@@ -57,12 +57,10 @@
     word-wrap: normal;
 }
 
-
-
 .socials-container{
     display: flex;
     gap: .5em;
-    list-style: none; 
+    list-style: none;
     justify-content: center;
     height: 5em;
 }
@@ -90,7 +88,11 @@
 
 .alink{
     color: black;
-    padding: .5rem;
+    padding: .4rem;
+}
+
+.alink span{
+    white-space: nowrap;
 }
 
 .alink:hover{
@@ -99,6 +101,8 @@
     border-radius: .5em;
 }
 
-.alink i:hover{
-    background-color: transparent;
+@media(max-width: 35rem){
+    .alink:hover{
+        background-color: transparent;
+    }
 }
