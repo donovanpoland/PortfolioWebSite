@@ -19,21 +19,6 @@ i{
     color: black;
 }
 
-.alink{
-    color: black;
-    padding: .4em;
-}
-
-.alink:hover{
-    color: white;
-    background-color: rgba(40, 40, 40, .3);
-    border-radius: .5em;
-}
-
-.alink i:hover{
-    background-color: transparent;
-}
-
 .border{
     border: black solid 2px;
 }

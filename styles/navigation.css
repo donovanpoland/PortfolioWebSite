@@ -87,3 +87,18 @@
 .socials-container a:hover span {
     display: block;
 }
+
+.alink{
+    color: black;
+    padding: .5rem;
+}
+
+.alink:hover{
+    color: white;
+    background-color: rgba(40, 40, 40, .3);
+    border-radius: .5em;
+}
+
+.alink i:hover{
+    background-color: transparent;
+}
