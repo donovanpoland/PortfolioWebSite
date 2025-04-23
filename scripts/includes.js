@@ -42,16 +42,26 @@ async function loadHTML(id, file) {
   }
   });
 
+  // hamburger menu
   function initHamburgerMenu() {
     const hamburger = document.getElementById("hamburger");
     const navMenu = document.getElementById("nav-menu");
+    const backdrop = document.getElementById("menu-backdrop");
   
-    if (!hamburger || !navMenu) {
-      console.error("Hamburger menu elements not found in header.");
+    if (!hamburger || !navMenu || !backdrop) {
+      console.error("Menu elements not found.");
       return;
     }
   
     hamburger.addEventListener("click", () => {
       navMenu.classList.toggle("show");
+      backdrop.classList.toggle("show");
+      document.body.classList.toggle("menu-open");
+    });
+  
+    backdrop.addEventListener("click", () => {
+      navMenu.classList.remove("show");
+      backdrop.classList.remove("show");
+      document.body.classList.remove("menu-open");
     });
   }
