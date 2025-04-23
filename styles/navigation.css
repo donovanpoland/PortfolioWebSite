@@ -41,7 +41,7 @@
     cursor: pointer;
 }
 
-@media (max-width: 50rem) {
+@media (max-width: 35rem) {
     .navbar {
       flex-direction: column;
       align-items: flex-start;
