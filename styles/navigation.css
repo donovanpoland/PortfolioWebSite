@@ -20,7 +20,7 @@
     border-radius: 1em;
     white-space: nowrap;
     display: inline-block;
-    width: 6.5rem;
+    width: 7rem;
     text-align: center;
     border: black solid 2px;
 }
@@ -41,7 +41,7 @@
     cursor: pointer;
 }
 
-@media (max-width: 35rem) {
+@media (max-width: 63.125rem) {
     .navbar {
       flex-direction: column;
       align-items: flex-start;
