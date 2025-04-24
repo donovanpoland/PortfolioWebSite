@@ -15,8 +15,8 @@ async function loadHTML(id, file) {
   }
 }
   
-  // Call includes on page load
-  window.addEventListener("DOMContentLoaded", () => {
+// Call includes on page load
+window.addEventListener("DOMContentLoaded", () => {
   // Check for header placeholder
   const headerEl = document.getElementById("header-include");
   if (headerEl) {
@@ -40,7 +40,8 @@ async function loadHTML(id, file) {
   if (aboutMeEl) {
     loadHTML("about-me-include", "includes/about-me.html");
   }
-  });
+}
+);
 
   // hamburger menu
   function initHamburgerMenu() {
