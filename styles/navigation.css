@@ -98,8 +98,6 @@
   
     .navbar ul.show {
         transform: translateY(0);
-        max-width: 7rem;
-
         opacity: 1;
         pointer-events: auto;
       }
@@ -108,7 +106,7 @@
       color: red;
       border: none;
       text-align: center;
-      max-width: 7rem;
+      max-width: clamp(7rem, 3vw, 7.5rem);
     }
   
     .navbar a:hover {
