@@ -78,11 +78,10 @@
 
     .navbar ul {
         flex-direction: column;
-        background-color: black;
         align-items: center;
         gap: 0.5em;
         border-radius: 1em;
-    
+        font-size: clamp(1rem, 3vw, 1.25rem);
         position: absolute;
         top: 100%;
         right: 0;
@@ -98,7 +97,7 @@
   
     .navbar ul.show {
         transform: translateY(0);
-        max-width: fit-content;
+        max-width: 7rem;
 
         opacity: 1;
         pointer-events: auto;
