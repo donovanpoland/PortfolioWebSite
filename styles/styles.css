@@ -92,11 +92,6 @@ main{
     grid-column: 1/-1;
 }
 
-.attribution i{
-    font-size: 1rem;
-    border: transparent;
-}
-
 .indent{
     text-indent: 2em;
 }
@@ -110,4 +105,21 @@ main{
 
 .flex-font{
     font-size: clamp(1rem, 3vw, 1.75rem);
+}
+
+/* Tables */
+
+
+table{
+    width: 16rem;
+    border-collapse: collapse;
+    overflow: hidden;
+}
+
+table thead tr {
+    border-bottom: dashed black 1px;
+}
+
+caption{
+    font-size: 1.5em;
 }

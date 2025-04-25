@@ -21,3 +21,8 @@ footer ul{
 footer a {
     color: black;
 }
+
+.attribution i{
+    font-size: 1rem;
+    border: transparent;
+}

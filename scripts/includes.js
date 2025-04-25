@@ -40,6 +40,18 @@ window.addEventListener("DOMContentLoaded", () => {
   if (aboutMeEl) {
     loadHTML("about-me-include", "includes/about-me.html");
   }
+
+  // Check for full website table placeholder
+  const webSiteTableFull = document.getElementById("full-website-table-include");
+  if (webSiteTableFull) {
+    loadHTML("full-website-table-include", "includes/full-website-table.html");
+  }
+
+  // Check for about me placeholder
+  const webSiteTableComp = document.getElementById("comp-website-table-include");
+  if (webSiteTableComp) {
+    loadHTML("comp-website-table-include", "includes/comp-website-table.html");
+  }
 }
 );
 
