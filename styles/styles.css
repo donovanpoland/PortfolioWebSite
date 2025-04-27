@@ -107,23 +107,6 @@ main{
     font-size: clamp(1rem, 3vw, 1.75rem);
 }
 
-/* Tables */
-
-
-table{
-    width: 16rem;
-    border-collapse: collapse;
-    overflow: hidden;
-}
-
-table thead tr {
-    border-bottom: dashed black 1px;
-}
-
-caption{
-    font-size: 1.5em;
-}
-
 .noscript-warning {
     background-color: #ff0000;
     color: white;

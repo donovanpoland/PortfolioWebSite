@@ -1,14 +1,19 @@
 // tables.js
 
 async function loadTableContent() {
-  const fullTable = document.getElementById("full-website-table-include");
-  if (fullTable) {
-    await loadHTML(fullTable.id, "includes/tables/full-website-table.html");
+  const newTable = document.getElementById("new-web-include");
+  if (newTable) {
+    await loadHTML(newTable.id, "includes/tables/new-web.html");
   }
 
-  const compTable = document.getElementById("comp-website-table-include");
+  const compTable = document.getElementById("comp-web-include");
   if (compTable) {
-    await loadHTML(compTable.id, "includes/tables/comp-website-table.html");
+    await loadHTML(compTable.id, "includes/tables/comp-web.html");
+  }
+
+  const rebuildTable = document.getElementById("rebuild-web-include");
+  if (rebuildTable) {
+    await loadHTML(rebuildTable.id, "includes/tables/rebuild-web.html");
   }
 }
 

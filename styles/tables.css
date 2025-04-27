@@ -1,0 +1,17 @@
+/* Tables */
+
+
+table{
+    border-collapse: collapse;
+    overflow: hidden;
+    
+}
+
+table thead tr {
+    border-bottom: dashed black 1px;
+}
+
+
+caption{
+    font-size: 1.5em;
+}
