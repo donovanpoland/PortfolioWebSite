@@ -28,7 +28,7 @@
 .navbar a:hover{
     background-color: transparent;
     color: black;
-    transition-duration: 0.15s;
+    transition-duration: .5s;
     border: black solid 2px;
 }
 
@@ -52,9 +52,9 @@
     z-index: 1;
     opacity: 0;
     pointer-events: none;
-    transition: opacity 0.3s ease;
+    transition: opacity 1s ease;
 }
-  
+
 /* Show when active */
 #menu-backdrop.show {
     opacity: 1;
@@ -66,15 +66,14 @@
       flex-direction: column;
       position: relative;
     }
-  
+
     .hamburger {
       display: block;
       position: absolute;
       top: 0;
       right: 1em;
       z-index: 3;
- 
-    } 
+    }
 
     .navbar ul {
         flex-direction: column;
@@ -86,40 +85,42 @@
         position: absolute;
         top: 100%;
         right: 0;
-        padding: 1em;
         z-index: 2;
         margin-right: 1em;
-    
+
         transform: translateY(-20px);
         opacity: 0;
         pointer-events: none;
-        transition: transform 0.3s ease, opacity 0.3s ease;
+        transition: transform .5s ease; 
       }
-  
+
     .navbar ul.show {
         transform: translateY(0);
         opacity: 1;
         pointer-events: auto;
       }
-  
+
     .navbar a {
       color: red;
       border: none;
       text-align: center;
-      max-width: clamp(7rem, 3vw, 8rem);
+      max-width: clamp(7rem, 3vw, 9rem);
     }
-  
+
     .navbar a:hover {
       background-color: black;
       color: white;
       border: none;
     }
 
+    /* Prevent background scroll */
     body.menu-open {
-        overflow: hidden; /* Prevent background scroll */
+        overflow: hidden; 
+        height: 100vh;
+        position: fixed;
+        width: 100%;
       }
-}
-/* End Media query */
+}/* End Media query */
 
 .fake-button {
     display: flex;

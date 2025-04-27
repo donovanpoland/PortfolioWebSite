@@ -123,3 +123,12 @@ table thead tr {
 caption{
     font-size: 1.5em;
 }
+
+.noscript-warning {
+    background-color: #ff0000;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.2rem;
+  }
