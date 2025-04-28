@@ -33,9 +33,9 @@ function initHamburgerMenu() {
 
     if (menuIsOpen) {
       const scrollbarWidth = window.innerWidth - document.documentElement.clientWidth;
-      document.body.style.paddingRight = `${scrollbarWidth}px`;
+      document.body.style.setProperty('--scrollbar-compensation', `${scrollbarWidth}px`);
     } else {
-      document.body.style.paddingRight = "";
+      document.body.style.removeProperty('--scrollbar-compensation');
     }
   });
 
@@ -44,7 +44,7 @@ function initHamburgerMenu() {
     navMenu.classList.remove("show");
     backdrop.classList.remove("show");
     document.body.classList.remove("menu-open");
-    document.body.style.paddingRight = "";
+    document.body.style.removeProperty('--scrollbar-compensation');
   });
 }
 
