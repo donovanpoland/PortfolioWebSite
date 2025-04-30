@@ -9,8 +9,9 @@
     display: flex;
     justify-content: center;
     gap: .5em;
-    font-size: clamp(1rem, 3vw, 1.25rem);
+    font-size: clamp(1rem, 3vw, 1.2rem);
     flex-wrap: wrap;
+    padding: .2em;
 }
 
 .navbar a{
@@ -179,7 +180,7 @@
         color: red;
         border: none;
         text-align: center;
-        max-width: clamp(7rem, 4vw, 10rem);
+        max-width: clamp(7rem, 4vw, 12.6rem);
     }
 
     .navbar a:hover {
@@ -191,5 +192,6 @@
     body.menu-open {
         overflow: hidden;
         padding-right: var(--scrollbar-compensation, 0px);
+        position: fixed;
     }
 }/* End Media query */
