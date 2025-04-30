@@ -1,29 +1,43 @@
 /* Tables */
 
 
-.table-prog, .table-enterprise {
+table {
     width: 100%;
     border-collapse: collapse;
     margin: 2rem 0;
-  }
-  .table-prog caption, .table-enterprise caption {
+}
+
+table caption {
     caption-side: top;
     font-weight: bold;
     font-size: 1.25rem;
     margin-bottom: 0.5rem;
-  }
-  .table-prog th, .table-prog td, .table-enterprise th, .table-enterprise td {
+}
+
+table th, table td, table th, table td {
     padding: 0.75rem 1rem;
     border: 1px solid #ccc;
     text-align: center;
-  }
-  .table-prog th {
+}
+
+table th {
     background-color: black;
     color: white;
-  }
-  .table-prog tbody tr:nth-child(even) {
+}
+
+table tbody tr:nth-child(even) {
     background-color: rgba(0, 0, 0, 0.3);;
-  }
-  .table-enterprise {
+}
+
+.table-enterprise {
     margin-top: 3rem;
-  }
+}
+
+.table-wrapper {
+  overflow-x: auto;
+  width: 100%;
+}
+
+.table-wrapper table {
+  min-width: 400px;
+}

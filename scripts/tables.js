@@ -6,11 +6,6 @@ async function loadTableContent() {
     await loadHTML(newTable.id, "includes/tables/new-web.html");
   }
 
-  const compTable = document.getElementById("comp-web-include");
-  if (compTable) {
-    await loadHTML(compTable.id, "includes/tables/comp-web.html");
-  }
-
   const rebuildTable = document.getElementById("rebuild-web-include");
   if (rebuildTable) {
     await loadHTML(rebuildTable.id, "includes/tables/rebuild-web.html");
