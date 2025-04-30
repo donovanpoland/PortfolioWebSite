@@ -124,8 +124,12 @@
 }
 
 .alink{
+    display: inline-block;
     color: black;
     padding: .4rem;
+    line-height: 1;
+    transition: background-color 0.3s ease;
+    border-radius: .5em;
 }
 
 .alink span{
@@ -135,7 +139,10 @@
 .alink:hover{
     color: white;
     background-color: rgba(40, 40, 40, .3);
-    border-radius: .5em;
+}
+
+.alink i:hover{
+    background-color: transparent;
 }
 
 .portfolio article img{
