@@ -138,6 +138,11 @@
     border-radius: .5em;
 }
 
+.portfolio article img{
+    object-fit: cover;
+    max-height: 200px;
+}
+
 @media(max-width: 37rem){
     .alink:hover{
         background-color: transparent;
