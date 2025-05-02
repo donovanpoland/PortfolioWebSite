@@ -1,0 +1,51 @@
+.image-gallery {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    max-width: 100%;
+    width: 100%;
+    height: 400px;        /* fixed height for consistency */
+    object-fit: cover;    /* crop edges to maintain aspect ratio */
+    border-radius: 1em;
+    position: relative;
+  }
+  
+  .image-gallery img {
+    max-width: 265px;
+    max-height: 400px;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  .image-gallery button {
+    background: none;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    color: #333;
+    padding: 0.5rem;
+  }
+  
+  .image-gallery button:hover {
+    color: red;
+  }
+
+  .counter {
+    position: absolute;
+    top: 0.5rem;
+    right: 0.75rem;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 0.25em 0.6em;
+    font-size: 0.9rem;
+    border-radius: 0.5em;
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+    pointer-events: none;
+  }
+  .counter.fade {
+    opacity: 0;
+  }
+  

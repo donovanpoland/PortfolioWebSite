@@ -3,12 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Me</title>
+    <title>Donovan Poland - About Me</title>
     <meta name="description" content="Learn more about Donovan Poland here.">
     <meta name="author" content="Donovan Poland">
     <!--Scripts start-->
     <script src="scripts/navigation.js"></script>
     <script src="scripts/about.js"></script>
+    <script src="scripts/img-gallery.js"></script>
     <!--Scripts end-->
     <!--Start CSS style sheets-->
     <link rel="stylesheet" href="styles/header-footer.css">
@@ -16,6 +17,7 @@
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="stylesheet" href="styles/profile-grid.css">
     <link rel="stylesheet" href="styles/scroll-animation.css">
+    <link rel="stylesheet" href="styles/img-gallery.css">
     <!--End CSS style sheets-->
     <!--start Font awesome for logos-->
     <link rel="stylesheet" href="assests/css/all.css">
@@ -159,12 +161,21 @@
             <section class="grid-item border-radius center">
                 <div class="grid grid-responsive">
                     <div class="grid-item">
-                        <h3>Certificates</h3>
-                        <p>Lorem ipsum dolor sit amet.</p>
+                        <article>
+                            <h3>Certificates</h3>
+                            <ul>
+                              <li>General Education Certificate</li>
+                            </ul>
+                          </article>
                     </div>
                     <div class="grid-item">
-                        <h3>Schools</h3>
-                        <p>Lorem ipsum dolor sit amet.</p>
+                        <article>
+                            <h3>Schools</h3>
+                            <ul>
+                              <li><strong>BYU-Idaho (Pathways)</strong> — Jan 2024 - Current</li>
+                              <li><strong>Ensign College (formerly LDSBC)</strong> — Sept 2015 - April 2017</li>
+                            </ul>
+                          </article>
                     </div>
                 </div>
             </section>
@@ -202,7 +213,7 @@
                     </div>
                     <div class="grid grid-responsive flex-font">
                         <p><b>Phone:</b><span> (801)232-7249</span></p>
-                        <p><b>Email:</b><span> email@email.com</span></p>
+                        <p><b>Email:</b><span> Djamespoland@gmail.com</span></p>
                     </div>
                 </div>  
                     <a href="contact.html" class="fake-button">Contact Me!</a>
@@ -212,23 +223,32 @@
             <section class="grid-item border-radius">
                 <div class="grid grid-responsive center">
                     <p class="grid-item grid-heading">Summary of what I like to do</p>
-                    <h3 class="grid-item">Games</h3>
-                    <h3 class="grid-item">Books</h3>
-                    <h3 class="grid-item">Movies</h3>
-                    <h3 class="grid-item">Art</h3>
+                    
+                    <div class=" grid-item" data-gallery="gallery1">
+                        <h3>Media Entertainment</h3>
+                        <button class="prev">&#10094;</button>
+                        <img class="gallery-image" alt="Gallery image">
+                        <button class="next">&#10095;</button>
+                      </div>
+                    <h3 class="grid-item">My Art</h3>
+                    <link class="alink" rel="stylesheet" href="">
                     <h3 class="grid-item">Crypto</h3>
                     <h3 class="grid-item">Tech experiments</h3>
                 </div>
             </section>
             <!--Family-->
-            <h2 class="center underline"><i class="fa-solid fa-people-roof"></i>Family</h2>
+            <h2 class="center underline"><i class="fa-solid fa-people-roof"></i>My Family of 4</h2>
             <section class="grid-item border-radius">
-                <div class="grid grid-responsive">
-                    <p class="grid-item grid-heading">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem, natus neque! Dicta, id voluptas. Debitis natus consectetur aliquid nobis saepe.</p>
-                    <img src="" alt="img1" class="grid-item">
-                    <img src="" alt="img2" class="grid-item">
-                    <img src="" alt="img3" class="grid-item">
-                </div>
+                <p class="indent flex-font">My family is my foundation. They are the center of my life, my greatest source of joy, and the reason behind everything I strive to accomplish.
+                    Every decision I make and every goal I pursue is grounded in the desire to provide for, protect, and grow with them.
+                    They are not just a part of my life — they are my purpose.</p>
+                <br>
+                <div class="image-gallery" data-gallery="family">
+                    <div class="counter" aria-hidden="true">1 of 11</div>
+                    <button class="prev">&#10094;</button>
+                    <img class="gallery-image" alt="Family Photos" loading="lazy">
+                    <button class="next">&#10095;</button>
+                  </div>
             </section>
         </div>
         <!--Outer Grid End-->
