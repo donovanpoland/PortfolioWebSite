@@ -7,6 +7,20 @@ async function loadHTML(id, file) {
     const html = await res.text();
     document.getElementById(id).innerHTML = html;
 
+    // Run footer-specific logic after loading it
+    if (id === "footer-include") {
+      const currentYear = document.querySelector("#current-year");
+      const lastModified = document.querySelector("#last-modified");
+
+      if (currentYear) {
+        currentYear.textContent = new Date().getFullYear();
+      }
+
+      if (lastModified) {
+        lastModified.textContent = `Last modified: ${document.lastModified}`;
+      }
+    }
+
     if (id === "header-include") {
       initHamburgerMenu();
     }
@@ -15,6 +29,7 @@ async function loadHTML(id, file) {
   }
 }
 
+// create hamburger menu
 function initHamburgerMenu() {
   const hamburger = document.getElementById("hamburger");
   const navMenu = document.getElementById("nav-menu");
@@ -56,3 +71,4 @@ window.addEventListener("DOMContentLoaded", () => {
   const footerEl = document.getElementById("footer-include");
   if (footerEl) loadHTML("footer-include", "includes/navigation/footer.html");
 });
+
