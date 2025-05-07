@@ -1,18 +1,18 @@
 document.addEventListener("DOMContentLoaded", () => {
     const galleryData = {
       family: [
-        'images/family/img2.jpeg',
-        'images/family/img1.jpg',
-        'images/family/img3.jpg',
-        'images/family/img4.jpg',
-        'images/family/img5.jpg',
-        'images/family/img6.jpg',
-        'images/family/img7.jpg',
-        'images/family/img8.jpg',
-        'images/family/img9.jpg',
-        'images/family/img10.jpg',
-        'images/family/img11.webp'
-      ]
+        "../images/family/img2.jpeg",
+        "../images/family/img1.jpg",
+        "../images/family/img3.jpg",
+        "../images/family/img4.jpg",
+        "../images/family/img5.jpg",
+        "../images/family/img6.jpg",
+        "../images/family/img7.jpg",
+        "../images/family/img8.jpg",
+        "../images/family/img9.jpg",
+        "../images/family/img10.jpg",
+        "../images/family/img11.webp",
+      ],
     };
   
     document.querySelectorAll('.image-gallery').forEach(gallery => {

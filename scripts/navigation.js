@@ -66,9 +66,9 @@ function initHamburgerMenu() {
 // Always load header and footer globally
 window.addEventListener("DOMContentLoaded", () => {
   const headerEl = document.getElementById("header-include");
-  if (headerEl) loadHTML("header-include", "includes/navigation/header.html");
+  if (headerEl) loadHTML("header-include", "../includes/navigation/header.html");
 
   const footerEl = document.getElementById("footer-include");
-  if (footerEl) loadHTML("footer-include", "includes/navigation/footer.html");
+  if (footerEl) loadHTML("footer-include", "../includes/navigation/footer.html");
 });
 
