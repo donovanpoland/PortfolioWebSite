@@ -27,6 +27,17 @@
     color: #333;
     padding: 0.5rem;
   }
+
+  @media (max-width: 37rem) {
+    .image-gallery button {
+      padding: 0;
+      font-size: 1.75rem
+    }
+
+    .image-gallery{
+      gap: .3rem;
+    }
+  }
   
   .image-gallery button:hover {
     color: red;
