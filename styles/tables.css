@@ -5,6 +5,7 @@ table {
     width: 100%;
     border-collapse: collapse;
     margin: 2rem 0;
+    box-shadow: 1em 1em 2em;
 }
 
 table caption {
