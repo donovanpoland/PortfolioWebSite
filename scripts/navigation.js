@@ -102,9 +102,13 @@ function getYearAndLastModified() {
       timeZone: "UTC",
     });
 
+    const offsetMinutes = today.getTimezoneOffset();
+    const offsetHours = -offsetMinutes / 60;
+    const formattedOffset = `GMT${offsetHours >= 0 ? '+' : ''}${offsetHours}`;
+
     //display the info
     lastModified.innerHTML =
-      `Last modified: ${localFormatted} GMT<br>` +
+      `Last modified: ${localFormatted} ${formattedOffset}<br>` +
       `Last modified: ${utcFormatted} UTC`;
   } 
 }
